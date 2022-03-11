@@ -10,8 +10,8 @@ const AdviceCard = () => {
   };
 
   useEffect(() => {
-      fetchAdvice()
-  },[])
+    fetchAdvice();
+  }, []);
 
   return (
     // Card container
@@ -24,7 +24,7 @@ const AdviceCard = () => {
         </p>
         {/* Quote */}
         <div className="text-xl text-center font-bold text-[#cee3e9] p-3">
-          "{advice.advice}"
+          &quot;{advice.advice}&quot;
         </div>
         {/* Divider */}
         <img className="p-3 mb-6" src="/pattern-divider-desktop.svg" alt="" />
